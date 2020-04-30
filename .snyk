@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -21,3 +21,10 @@ patch:
         patched: '2017-10-17T17:11:30.701Z'
     - nightmare > electron > extract-zip > debug > ms:
         patched: '2017-10-17T17:11:30.701Z'
+  SNYK-JS-LODASH-567746:
+    - filehound > lodash:
+        patched: '2020-04-30T21:33:32.705Z'
+    - express-easy-zip > zip-stream > lodash:
+        patched: '2020-04-30T21:33:32.705Z'
+    - express-easy-zip > zip-stream > archiver-utils > lodash:
+        patched: '2020-04-30T21:33:32.705Z'

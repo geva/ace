@@ -62,7 +62,7 @@
     "nightmare": "^2.10.0",
     "path": "^0.12.7",
     "shortid": "^2.2.8",
-    "snyk": "^1.43.0",
+    "snyk": "^1.316.1",
     "tmp": "^0.0.33",
     "unzip": "^0.1.11",
     "uuidv4": "^0.5.0",
@@ -99,7 +99,7 @@
     "test": "jest",
     "docs": "echo add docs",
     "protect": "snyk protect",
-    "prepare": "npm run protect",
+    "prepare": "yarn run snyk-protect && npm run protect",
     "prepublishOnly": "npm run test && npm run build",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
